@@ -1,0 +1,12 @@
+ImageSearch, FoundX, FoundY, 0, 0, A_ScreenWidth, A_ScreenHeight, D:\桌面文件夹\留言111\输入.PNG
+while ErrorLevel = 1
+{
+sleep 10
+;识别到屏幕像素图，等待进行下一步
+
+ImageSearch, FoundX, FoundY, 0, 0, A_ScreenWidth, A_ScreenHeight, D:\桌面文件夹\留言111\输入.PNG
+sleep 10
+if ErrorLevel = 0
+break
+}
+;若识别不到，中断循环
